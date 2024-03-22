@@ -22,6 +22,11 @@
       env: { // environment variable
         PORT: 3000,
         NODE_ENV: 'production',
+        LOG_DIR: "log",
+        SECRET_KEY: "key",
+        LOG_FORMAT: "dev", 
+        ORIGIN="localhost",
+        DATABASE_URL="mysql://root:password@mysql:3306/test"
       },
     },
     {
@@ -41,6 +46,11 @@
       env: { // environment variable
         PORT: 3000,
         NODE_ENV: 'development',
+        LOG_DIR: "log",
+        SECRET_KEY: "key2",
+        LOG_FORMAT: "dev", 
+        ORIGIN="localhost"
+        DATABASE_URL="mysql://root:password@mysql:3306/test"
       },
     },
   ],
